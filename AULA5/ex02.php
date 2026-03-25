@@ -31,6 +31,7 @@ $cidadania4 = [
 
 
 $conjuntoCidadania = array($cidadania1, $cidadania2, $cidadania3, $cidadania4);
+echo "     Nome       | Endereço    | Cidade   |   UF \n";
 
 foreach ($conjuntoCidadania as $conj) {
     echo $conj["pessoa"] . " | " . $conj["endereco"] . " | " . $conj["cidade"] . " | " . $conj["UF"] . " \n ";
