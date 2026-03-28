@@ -19,6 +19,31 @@ function functiom($x)
     return ($x*$x + 2 * $x + 4) / 2 * $x;
 }
 
+function imprimirFahrenheit($vetor)
+{
+    echo "\n\n---Celcius Para Fahrenheit---\n\n";
+
+    foreach ($vetor as $celcius) {
+        echo $celcius . " - ";
+    }
+}
+function imprimirFatorial($vetor)
+{
+    echo "\n\n---Fatorial---\n\n";
+
+    foreach ($vetor as $fatorial) {
+        echo $fatorial . " - ";
+    }
+}
+function imprimirFuncao($vetor)
+{
+    echo "\n\n---Função---\n\n";
+
+    foreach ($vetor as $funcao) {
+        echo $funcao . " - ";
+    }
+}
+
 
 //PROGRAMA PRINCIPAL
 
@@ -58,22 +83,12 @@ foreach($everyone as $x){
 }
 
 //5- Imprimir os 3 vetores utilizando a função
-echo "\n\n---Celcius Para Fahrenheit---\n\n";
+$fahrenheit = imprimirFahrenheit($vetor1);
+echo $fahrenheit;
 
-foreach($vetor1 as $celcius){
-    echo $celcius . " - "; 
+$fatorial = imprimirFatorial($vetor2);
+echo $fatorial;
 
-}
-
-echo "\n\n---Fatorial---\n\n";
-foreach($vetor2 as $fatorial){
-    echo $fatorial . " - ";
-
-}
-
-echo "\n\n---Função---\n\n";
-foreach($vetor3 as $funcao){
-    echo $funcao . " - ";
-
-}
+$funcao = imprimirFuncao($vetor3);
+echo $funcao;
 
