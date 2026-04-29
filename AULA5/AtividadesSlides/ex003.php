@@ -2,9 +2,18 @@
 
 class Retangulo
 {
+    //Atributos
     public $base;
     public $altura;
 
+    //Construtor da Classe
+    function __construct($base, $altura)
+    {
+        $this->base = $base;
+        $this->altura = $altura;
+    }
+
+    //Métodos
     function area()
     {
         $area = $this->base * $this->altura;
@@ -16,14 +25,16 @@ class Retangulo
         $perimetro = 2 * ($this->base + $this->altura);
         return $perimetro;
     }
-}
+}//Fim da Classe
 
 $contador = 0;
 
 for($i = 0; $i < 3; $i++){
-    $retangulo1 = new Retangulo;
-    $retangulo1->base = readline("Informe a área de um retangulo: ");
-    $retangulo1->altura = readline("Informe a altura de um triangulo: ");
+    $base = readline("Informe a área de um retangulo: ");
+    $altura = readline("Informe a altura de um triangulo: ");
+
+    $retangulo1 = new Retangulo($base, $altura);
+
     $area = $retangulo1->area();
     $perimetro = $retangulo1->perimetro();
     
